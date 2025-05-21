@@ -1,14 +1,24 @@
 #Matrix in R (10 students study hours given)
-study_hours= c(89,69, 45, 75, 63,54, 23, 57, 46, 67)
-subject_marks = c (79, 53, 71, 57, 63, 54, 74, 77, 61, 69)
+study_hours= c(89,69, 45, 75, 63,54, 23, 25, 46, 67)
+subject_marks = c(79, 53, 71, 57, 63, 54, 74, 77, 61, 69)
 #creating a matrix in r just using study hours
+# matrix is data sturcuture which can combine different vector in single data stucture 
 study_hours
 study_hours_mat = matrix(study_hours)
 study_hours_mat
 
-# matrix can add column next to a column, adding column in matrix 
-student_data= c(study_hours, subject_marks)
-student_data_mat = matrix(study_hours, subject_marks)
+# matrix can add different data type/vectors as column next to a column, adding column in matrix 
+#joining two colums in a matrix
+student_data = c(study_hours, subject_marks)
+student_data
+# all twenty data came into in a row, student data working here as a vector
+# vector can not combine columns but matrix can
+
+student_data = c(study_hours, subject_marks)
+student_matrix = matrix(student_data, byrow = FALSE, nrow = 10 )
+student_matrix
+
+student_matrix = matrix(student_data)
 study_hours= c(89,69, 45, 75, 63,54, 23, 57, 46, 67)
 subject_marks = c (79, 53, 71, 57, 63, 54, 74, 77, 61, 69)
 study_hours_mat = matrix(study_hours)
