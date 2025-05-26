@@ -8,17 +8,21 @@ data()
 #AirPassengers
 BOD
 #SEARCH IT IN RIGHT SIDE ENVIONMENT PAGE
-install.packages("nycflights13)
-nycflights13
+install.packages("nycflights13")
+nycflights13 WRITE ON CONSOLE TO SEE DATA FULL
+IF U WRITE ATACH (nycflights13::flights) DOUBLE COLON SHOWS DATA
 attach(nycflights13::flights)
-#to look at first 6 record using head()function
+#to look at first 6 record using head()function WE CAN SEE FISRT 6 ROWS
 head(nycflights13::flights)
 summary(distance)
 describe(distance)
-# to see 3/4 variables descriptive anaysis/ to see different column togather
+cbind(arr_delay, dep_delay, distance)
+
+
+to see 3/4 variables descriptive anaysis/ to see different column togather
 # type CBILNDS and cbind () type data name
 
-demo= cbind(arr_delay, dep_delay, distance)
+demo = cbind( arr_delay, dep_delay, distance)
 demo
 describe(demo)
 
